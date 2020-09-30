@@ -1,3 +1,6 @@
 .vs/
 obj/
 bin/
+AppPackages/
+BundleArtifacts/
+UWP_WebView_TemporaryKey.pfx
