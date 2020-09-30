@@ -6,9 +6,19 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Width="600"
+    Height="400"
+    Loaded="Page_Loaded">
 
-    <Grid>
-
-    </Grid>
+    <StackPanel Background="#000" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="Enter a URL and click OPEN" FontSize="20" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="_mTxtUrl" Foreground="Black" Background="White" Width="400" PlaceholderText="Enter URL" VerticalAlignment="Center" Text=""/>
+            <Button Margin="10" Click="BtnOpen_Click">
+                <TextBlock Text="OPEN" Foreground="White" FontSize="20" Padding="10" />
+            </Button>
+        </StackPanel>
+        <TextBlock Text="Result" FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
+        <TextBox Name="_mTxtResult" FontSize="12" Width="500" Height="200" Foreground="Black" Background="White" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+    </StackPanel>
 </Page>
